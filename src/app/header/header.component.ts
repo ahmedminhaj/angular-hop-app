@@ -7,8 +7,12 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 
 export class HeaderComponent{
-    @Output() featureSelected = new EventEmitter<string>()
-    onSelete(feature:string){
-        this.featureSelected.emit(feature)
-    }
+    // @Output() featureSelected = new EventEmitter<string>()
+    // onSelete(feature:string){
+    //     this.featureSelected.emit(feature)
+    // }
+    //use in header.component.html to navigate different component view without routing
+
+    // href="#" 
+    // (click)="onSelete('recipe')"
 }
